@@ -1,0 +1,13 @@
+.container img {
+  width: 100%;
+}
+
+.isi p {
+  font-family: quicksand;
+  text-align: justify;
+  line-height: 35px;
+}
+
+span {
+  font-weight: bold;
+}
