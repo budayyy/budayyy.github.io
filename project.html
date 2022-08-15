@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-white w-full absolute">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-end lg:justify-center px-5">
+          <div>
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block lg:hidden"
+            >
+              <span
+                class="w-[30px] h-[2px] my-2 block bg-slate-900 rounded-lg transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="w-[30px] h-[2px] my-2 block bg-slate-900 rounded-lg transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="w-[20px] h-[2px] my-2 block bg-slate-900 rounded-lg transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-2 border-b right-0 lg:border-b-0 lg:py-10 bg-white max-w-full w-full top-full lg:block lg:static lg:bg-transparent lg:max-w-full"
+            >
+              <div
+                class="px-2 pb-2 lg:flex lg:items-center lg:border lg:px-2 lg:py-3 lg:rounded-full"
+              >
+                <a
+                  href="index.html"
+                  class="text-slate-900 hover:bg-yellow-500 hover:text-slate-50 block px-3 py-2 rounded-md text-base font-medium lg:mx-10 lg:text-lg lg:hover:rounded-3xl"
+                  >Home
+                </a>
+                <a
+                  href="skill.html"
+                  class="text-slate-900 hover:bg-yellow-500 hover:text-slate-50 block px-3 py-2 rounded-md text-base font-medium lg:mx-10 lg:text-lg lg:hover:rounded-3xl"
+                  >Skill
+                </a>
+                <a
+                  href="project.html"
+                  class="text-slate-900 hover:bg-yellow-500 hover:text-slate-50 block px-3 py-2 rounded-md text-base font-medium lg:mx-10 lg:text-lg lg:hover:rounded-3xl lg:bg-yellow-500 lg:text-slate-50 lg:rounded-3xl"
+                  >Project
+                </a>
+                <a
+                  href="about.html"
+                  class="text-slate-900 hover:bg-yellow-500 hover:text-slate-50 block px-3 py-2 rounded-md text-base font-medium lg:mx-10 lg:text-lg lg:hover:rounded-3xl"
+                  >About
+                </a>
+                <a
+                  href="contact.html"
+                  class="text-slate-900 hover:bg-yellow-500 hover:text-slate-50 block px-3 py-2 rounded-md text-base font-medium lg:mx-10 lg:text-lg lg:hover:rounded-3xl"
+                  >Contact
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto py-20 lg:pt-36 lg:pb-0">
+      <h3 class="text-4xl font-semibold text-center mb-10">Project</h3>
+    </div>
+
+    <div class="grid gap-4 mx-auto px-4 lg:grid-cols-3 pb-20">
+      <div class="border rounded-lg overflow-hidden shadow-md">
+        <a href="#">
+          <img
+            src="dist/img/project-1.png"
+            alt="project-1"
+            class="bg-cover bg-center max-w-full mb-3"
+          />
+          <h3 class="px-2 text-xl font-medium mb-2">
+            Sistem informasi akademik
+          </h3>
+          <p class="px-2 text-sm text-slate-600 mb-2">
+            sistem yang berhubungan dengan akademisi
+          </p>
+          <div class="flex justify-end mb-4">
+            <a href="https://github.com/budayyy" class="mx-3 lg:mx-5">
+              <svg
+                width="30"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+          </div>
+        </a>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow-md">
+        <a href="#">
+          <img
+            src="dist/img/project-1.png"
+            alt="project-1"
+            class="bg-cover bg-center max-w-full mb-3"
+          />
+          <h3 class="px-2 text-xl font-medium mb-2">
+            Sistem informasi akademik
+          </h3>
+          <p class="px-2 text-sm text-slate-600 mb-2">
+            sistem yang berhubungan dengan akademisi
+          </p>
+          <div class="flex justify-end mb-4">
+            <a href="https://github.com/budayyy" class="mx-3 lg:mx-5">
+              <svg
+                width="30"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+          </div>
+        </a>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow-md">
+        <a href="#">
+          <img
+            src="dist/img/project-1.png"
+            alt="project-1"
+            class="bg-cover bg-center max-w-full mb-3"
+          />
+          <h3 class="px-2 text-xl font-medium mb-2">
+            Sistem informasi akademik
+          </h3>
+          <p class="px-2 text-sm text-slate-600 mb-2">
+            sistem yang berhubungan dengan akademisi
+          </p>
+          <div class="flex justify-end mb-4">
+            <a href="https://github.com/budayyy" class="mx-3 lg:mx-5">
+              <svg
+                width="30"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+          </div>
+        </a>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow-md">
+        <a href="#">
+          <img
+            src="dist/img/project-1.png"
+            alt="project-1"
+            class="bg-cover bg-center max-w-full mb-3"
+          />
+          <h3 class="px-2 text-xl font-medium mb-2">
+            Sistem informasi akademik
+          </h3>
+          <p class="px-2 text-sm text-slate-600 mb-2">
+            sistem yang berhubungan dengan akademisi
+          </p>
+          <div class="flex justify-end mb-4">
+            <a href="https://github.com/budayyy" class="mx-3 lg:mx-5">
+              <svg
+                width="30"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
