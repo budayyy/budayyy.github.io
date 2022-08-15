@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45 w-[30px];
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
