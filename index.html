@@ -14,6 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <header class="bg-white w-full absolute">
@@ -83,10 +86,19 @@
           class="rounded-full bg-cover w-52 lg:mt-10"
         />
       </div>
-      <h3 class="text-center text-4xl mt-10 font-bold lg:text-5xl">
-        BUDI SETIAWAN
-      </h3>
-      <p class="text-center mt-3 text-xl font-base">
+      <div class="mx-auto max-w-lg p-4">
+        <h3
+          class="flex flex-wrap justify-center text-4xl font-bold lg:text-5xl"
+        >
+          BUDI SETIAWAN
+          <a href="dist/pdf/CV Budi Setiawan.pdf" download="CV-Budi-Setiawan">
+            <div class="border border-gray-600 mx-2 p-3 rounded-md">
+              <i data-feather="download"></i>
+            </div>
+          </a>
+        </h3>
+      </div>
+      <p class="text-center text-xl font-base">
         <span class="text-yellow-500 font-bold">enthusiast</span>
         web developer
       </p>
@@ -134,6 +146,10 @@
         </a>
       </div>
     </div>
+
+    <script>
+      feather.replace();
+    </script>
 
     <script src="dist/js/script.js"></script>
   </body>
