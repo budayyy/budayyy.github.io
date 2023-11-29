@@ -22,7 +22,7 @@ export default function Home() {
               />
             </div>
             <h3 className="text-3xl lg:text-5xl text-center lg:text-start font-extrabold">
-              Halo,I am Budi
+              Halo,I am Budi Setiawan
             </h3>
             <div className="text-center lg:text-start">
               <span className="text-2xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
