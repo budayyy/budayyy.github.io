@@ -19,11 +19,13 @@ export default function Home() {
         <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
         <div className="bg-white p-4 lg:pl-[22rem] lg:py-24 lg:pr-16 lg:w-[96%]">
           <div className="w-full bg-white p-2">
-            <span className="text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
-              Contact
-            </span>
+            <div className="text-center lg:text-start">
+              <span className="text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
+                Contact
+              </span>
+            </div>
 
-            <p className="mt-4 mb-8 text-base font-normal">
+            <p className="mt-4 mb-8 text-base font-normal text-center lg:text-start">
               bolehlah koneksi bareng hehe😁
             </p>
             <div className="max-w-sm space-y-4">

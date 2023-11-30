@@ -25,7 +25,7 @@ export default function Home() {
               Halo,I am Budi
             </h3>
             <div className="text-center lg:text-start">
-              <span className="text-2xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
+              <span className="text-xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
                 <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed once, initially
