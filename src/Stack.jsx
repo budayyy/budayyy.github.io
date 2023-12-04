@@ -10,11 +10,13 @@ import {
   TbBrandLaravel,
   TbBrandNextjs,
   TbBrandNodejs,
-  TbBrandPhp,
   TbBrandReact,
   TbBrandTailwind,
   TbBrandVue,
 } from "react-icons/tb";
+import { SiCodeigniter } from "react-icons/si";
+import { DiPhp } from "react-icons/di";
+
 import { useState } from "react";
 
 export default function Home() {
@@ -55,7 +57,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
-                <TbBrandPhp className="text-4xl text-violet-500" />
+                <DiPhp className="text-4xl text-violet-500" />
                 <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
                   PHP
                 </span>
@@ -112,6 +114,12 @@ export default function Home() {
                 <TbBrandVue className="text-4xl text-emerald-500 " />
                 <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
                   Vue JS
+                </span>
+              </div>
+              <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <SiCodeigniter className="text-4xl text-orange-700 " />
+                <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  Codeigniter
                 </span>
               </div>
             </div>
