@@ -73,15 +73,6 @@ export const Project = [
   },
   {
     id: 9,
-    title: "Website Ngamplop",
-    desc: "Website untuk mencatat pengeluaran keuangan pas waktu kondangan",
-    stack: ["Laravel", "Tailwind", "AlpineJS"],
-    gambar: "./project/ngamplop.png",
-    github: "https://github.com/budayyy/ngamplop",
-    link: "http://34.101.212.87/",
-  },
-  {
-    id: 10,
     title: "Website CV Online Budi Setiawan",
     desc: "Website untuk mengetahui CV sendiri secara online",
     stack: ["React JS", "Tailwind", "Javascript"],
@@ -90,7 +81,7 @@ export const Project = [
     link: "https://budayyy.github.io/cv-budi-setiawan/",
   },
   {
-    id: 11,
+    id: 10,
     title: "Website Agency",
     desc: "Website Sederhana agency template tailwind.",
     stack: ["React JS", "Tailwind", "Javascript"],
