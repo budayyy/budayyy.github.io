@@ -89,4 +89,22 @@ export const Project = [
     github: "https://github.com/budayyy/web-agency",
     link: "https://web-agency-budayyy.vercel.app/",
   },
+  {
+    id: 11,
+    title: "Ngamplop",
+    desc: "catat amplop kondanganmu - Atur pengeluaran kondanganmu dengan lebih praktis dan simpel dengan Ngamplop otomatis di manage dan tertata untuk setiap orang yg kamu datangi",
+    stack: ["Laravel", "PHP", "Tailwind", "Javascript"],
+    gambar: "./project/ngamplop.png",
+    github: "https://github.com/budayyy",
+    link: "https://ngamplop.up.railway.app/",
+  },
+  {
+    id: 12,
+    title: "Sipeda - Sistem Pengajuan Dana Desa",
+    desc: "website sistem informasi pengajuan dana desa yang memudahkan user desa untuk mengajukan pengajuan dana desa",
+    stack: ["Laravel", "PHP", "Bootstrap", "Javascript"],
+    gambar: "./project/sipeda.png",
+    github: "https://github.com/budayyy",
+    link: "https://pengajuan-dana-desa.up.railway.app/",
+  },
 ];
