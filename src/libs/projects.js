@@ -60,7 +60,7 @@ export const Project = [
     stack: ["HTML", "JavaScript", "CSS"],
     gambar: "./project/kedai-warung-kopi.png",
     github: "https://github.com/budayyy/warung-kopi",
-    link: "https://www.bina-apps.com/",
+    link: "https://budayyy.github.io/warung-kopi/",
   },
   {
     id: 8,
