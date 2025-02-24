@@ -15,7 +15,7 @@ export const Project = [
     stack: ["Laravel", "JavaScript", "Bootstrap"],
     gambar: "./project/admin-bina.png",
     github: "https://github.com/budayyy",
-    link: "https://admin.bina-apps.com/",
+    link: "https://admin-bina-apps.projectbudi.my.id/",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ export const Project = [
     stack: ["Laravel", "JavaScript", "Bootstrap"],
     gambar: "./project/baqi.png",
     github: "https://github.com/budayyy",
-    link: "https://baqi-app.jannahku.com/",
+    link: "https://baqi-apps.projectbudi.my.id/",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const Project = [
     stack: ["Laravel", "JavaScript", "Bootstrap"],
     gambar: "./project/bina.png",
     github: "https://github.com/budayyy",
-    link: "https://www.bina-apps.com/",
+    link: "https://bina-apps.projectbudi.my.id/",
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ export const Project = [
     stack: ["PHP", "JavaScript", "Bootstrap"],
     gambar: "./project/spk-lahan.png",
     github: "https://github.com/budayyy",
-    link: "https://spk-lahan-pm.000webhostapp.com/",
+    link: "https://spklahan.projectbudi.my.id/",
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const Project = [
     stack: ["React JS", "Tailwind", "Javascript"],
     gambar: "./project/web-agency.png",
     github: "https://github.com/budayyy/web-agency",
-    link: "https://web-agency-budayyy.vercel.app/",
+    link: "https://web-agency.projectbudi.my.id/",
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ export const Project = [
     stack: ["Laravel", "PHP", "Tailwind", "Javascript"],
     gambar: "./project/ngamplop.png",
     github: "https://github.com/budayyy",
-    link: "https://ngamplop.up.railway.app/",
+    link: "https://ngamplop.projectbudi.my.id/",
   },
   {
     id: 12,
@@ -105,6 +105,22 @@ export const Project = [
     stack: ["Laravel", "PHP", "Bootstrap", "Javascript"],
     gambar: "./project/sipeda.png",
     github: "https://github.com/budayyy",
-    link: "https://pengajuan-dana-desa.up.railway.app/",
+    link: "https://sipdd.projectbudi.my.id/",
+  },
+  {
+    id: 13,
+    title: "Arsipin - Sistem Surat Masuk dan Surat Keluar",
+    desc: "Sistem surat digital yang memudahkan pengelolaan surat masuk dan keluar di kantor Anda.",
+    stack: [
+      "Laravel",
+      "PHP",
+      "Bootstrap",
+      "Javascript",
+      "Filament",
+      "Livewire",
+    ],
+    gambar: "./project/arsipin.png",
+    github: "https://github.com/budayyy",
+    link: "https://arsipin.projectbudi.my.id/",
   },
 ];

@@ -39,42 +39,44 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {/* project */}
                 {Project.sort((a, b) => b.id - a.id).map((data) => (
-                  <div
-                    key={data.id}
-                    className="border rounded space-y-2 lg:space-y-3 p-3 lg:p-2 w-full h-full bg-white flex flex-col"
-                  >
-                    <img
-                      src={data.gambar}
-                      alt={data.title}
-                      className="rounded"
-                    />
-                    <h3 className="text-base font-semibold lg:text-xl lg:font-bold">
-                      {data.title}
-                    </h3>
-                    <p className="text-sm font-light italic text-gray-700 mb-4 flex-1">
-                      {data.desc}
-                    </p>
-                    <div className="flex items-center justify-between flex-wrap">
-                      <div className="flex items-center gap-2 flex-wrap max-w-[20rem]">
-                        {data.stack.map((item, index) => (
-                          <span
-                            key={index}
-                            className="text-[0.5rem] font-bold  bg-gray-200 rounded-full border py-0.5 px-3"
-                          >
-                            {item}
-                          </span>
-                        ))}
-                      </div>
-                      <div className="flex items-center gap-x-2 mt-6 lg:mt-0">
-                        <Link to={data.github} target="_blank">
-                          <TbBrandGithub />
-                        </Link>
-                        <Link to={data.link} target="_blank">
-                          <TbExternalLink />
-                        </Link>
+                  <Link key={data.id} to={data.link} target="_blank">
+                    <div
+                      key={data.id}
+                      className="border rounded space-y-2 lg:space-y-3 p-3 lg:p-2 w-full h-full bg-white flex flex-col hover:border-blue-400 hover:shadow-md transition duration-300"
+                    >
+                      <img
+                        src={data.gambar}
+                        alt={data.title}
+                        className="rounded"
+                      />
+                      <h3 className="text-base font-semibold lg:text-xl lg:font-bold">
+                        {data.title}
+                      </h3>
+                      <p className="text-sm font-light italic text-gray-700 mb-4 flex-1">
+                        {data.desc}
+                      </p>
+                      <div className="flex items-center justify-between flex-wrap">
+                        <div className="flex items-center gap-2 flex-wrap max-w-[20rem]">
+                          {data.stack.map((item, index) => (
+                            <span
+                              key={index}
+                              className="text-[0.5rem] font-bold text-blue-500 bg-blue-100 rounded-full border py-0.5 px-3"
+                            >
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                        <div className="flex items-center gap-x-2 mt-6 lg:mt-0">
+                          <Link to={data.github} target="_blank">
+                            <TbBrandGithub />
+                          </Link>
+                          <Link to={data.link} target="_blank">
+                            <TbExternalLink />
+                          </Link>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
