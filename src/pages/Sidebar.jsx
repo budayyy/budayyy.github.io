@@ -110,7 +110,9 @@ export default function Sidebar({ navbarOpen, setNavbarOpen }) {
       </ul>
       <ul className="space-y-2 mt-6">
         <li>
-          <p className="text-xs font-semibold px-4 text-gray-950">FOLLOW</p>
+          <p className="text-xs font-semibold lg:font-bold px-4 text-gray-950">
+            FOLLOW
+          </p>
         </li>
         <li>
           <Link

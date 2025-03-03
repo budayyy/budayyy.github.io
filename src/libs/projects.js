@@ -123,4 +123,13 @@ export const Project = [
     github: "https://github.com/budayyy",
     link: "https://arsipin.projectbudi.my.id/",
   },
+  {
+    id: 14,
+    title: "Saba Production - Jasa Percetakan Online",
+    desc: "Saba Production - Jasa percetakan online terpercaya untuk cetak undangan, brosur, kartu nama, banner, dan lainnya. Pesan online dengan harga terbaik dan hasil berkualitas!.",
+    stack: ["Nextjs", "Javascript", "Tailwind", "Shadcn UI", "React"],
+    gambar: "./project/saba.png",
+    github: "https://github.com/budayyy",
+    link: "https://www.saba.web.id/",
+  },
 ];
