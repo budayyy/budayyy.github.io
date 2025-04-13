@@ -2,7 +2,12 @@ import Sidebar from "./pages/Sidebar";
 import Navbar from "./pages/Navbar";
 import LoadingScreen from "./components/LoadingScreen";
 import { Link } from "react-router-dom";
-import { TbBrandGithub, TbBrandLinkedin, TbMail } from "react-icons/tb";
+import {
+  TbArrowRight,
+  TbBrandGithub,
+  TbBrandLinkedin,
+  TbMail,
+} from "react-icons/tb";
 import { TypeAnimation } from "react-type-animation";
 import { useEffect, useState } from "react";
 
@@ -56,7 +61,7 @@ export default function Home() {
                   />
                 </span>
               </div>
-              <div className="grid grid-cols-2 gap-4 lg:flex lg:items-center my-6 ">
+              <div className="grid grid-cols-2 gap-4 lg:flex lg:items-center my-6">
                 <Link
                   to="/contact"
                   className="py-2 px-4 rounded bg-gray-100 text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-950"
@@ -86,6 +91,13 @@ export default function Home() {
                   Linkedin
                 </Link>
               </div>
+              <Link
+                to={"/projects"}
+                className="flex items-center justify-center gap-x-2 w-full lg:w-3/5 border border-gray-900 py-2 px-4 rounded-md bg-gray-950 text-white font-semibold text-sm lg:text-base hover:bg-gray-900"
+              >
+                Showcase Projects
+                <TbArrowRight />
+              </Link>
             </div>
           )}
         </div>
