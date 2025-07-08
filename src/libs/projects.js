@@ -132,4 +132,13 @@ export const Project = [
     github: "https://github.com/budayyy",
     link: "https://www.saba.web.id/",
   },
+  {
+    id: 15,
+    title: "RJ Tour & Organizer - Jasa Perjalanan & Wisata",
+    desc: "RJ Tour & Organizer - RJ Tour & Travel adalah perusahaan resmi yang berbadan hukum dan bergerak di bidang jasa perjalanan wisata..",
+    stack: ["Laravel", "Javascript", "Tailwind", "Alpine JS", "Mysql"],
+    gambar: "./project/rjtour.png",
+    github: "https://github.com/budayyy",
+    link: "https://rjtourtravel.projectbudi.my.id/",
+  },
 ];
