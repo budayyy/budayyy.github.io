@@ -2,6 +2,7 @@ import Sidebar from "./pages/Sidebar";
 import Navbar from "./pages/Navbar";
 import { useEffect, useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
+import HeadingSection from "./components/HeadingSection";
 
 export default function Home() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -20,15 +21,11 @@ export default function Home() {
       <div className="max-w-7xl mx-auto">
         <Sidebar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
         <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
-        <div className="bg-white p-4 lg:pl-[22rem] lg:py-24 lg:pr-16 lg:w-[96%]">
+        <div className="bg-white p-4 lg:pl-88 lg:py-24 lg:pr-16 lg:w-[96%]">
           {loading && <LoadingScreen />}
           {!loading && (
             <div className="w-full bg-white p-2">
-              <div className="text-center lg:text-start">
-                <span className="text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
-                  About
-                </span>
-              </div>
+              <HeadingSection>About</HeadingSection>
               <div className="my-4">
                 <img src="./buday.jpg" alt="budi" className="rounded-md" />
               </div>

@@ -19,6 +19,10 @@ import { DiPhp } from "react-icons/di";
 
 import { useEffect, useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
+import HeadingSection from "./components/HeadingSection";
+
+const stackStyle =
+  "flex items-center justify-center gap-x-1 rounded-sm border p-4 group hover:bg-primary hover:border-background hover:shadow-background cursor-pointer";
 
 export default function Home() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -37,101 +41,97 @@ export default function Home() {
       <div className="max-w-7xl mx-auto">
         <Sidebar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
         <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
-        <div className="bg-white p-4 lg:pl-[22rem] lg:py-24 lg:pr-16 lg:w-[96%]">
+        <div className="bg-white p-4 lg:pl-88 lg:py-24 lg:pr-16 lg:w-[96%]">
           {loading && <LoadingScreen />}
           {!loading && (
             <div className="w-full bg-white p-2">
-              <div className="text-center lg:text-start">
-                <span className="text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
-                  Stack
-                </span>
-              </div>
+              <HeadingSection>Stack</HeadingSection>
               <p className="mt-4 mb-8 text-sm lg:text-base text-center lg:text-start font-normal">
                 🚀 beberapa stack yang saya gunakan ketika membuat sebuah
                 project 🚀
               </p>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandHtml5 className="text-4xl text-orange-500" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     HTML
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandCss3 className="text-4xl text-blue-500" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     CSS
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandJavascript className="text-4xl text-yellow-500" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     JavaScript
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <DiPhp className="text-4xl text-violet-500" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     PHP
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandLaravel className="text-4xl text-red-500" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     Laravel
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandNodejs className="text-4xl text-green-700" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     Node JS
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandGit className="text-4xl text-orange-600" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     GIT
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandReact className="text-4xl text-sky-500" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     React JS
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandBootstrap className="text-4xl text-violet-700 " />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     Bootstrap
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandTailwind className="text-4xl text-sky-500" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     TailwindCSS
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
-                  <TbBrandNextjs className="text-4xl text-gray-950 group-hover:text-white" />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                <div className={stackStyle}>
+                  <TbBrandNextjs className="text-4xl text-gray-950 " />
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     Next JS
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandFigma className="text-4xl text-sky-700 " />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     Figma
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <TbBrandVue className="text-4xl text-emerald-500 " />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     Vue JS
                   </span>
                 </div>
-                <div className="flex items-center justify-center gap-x-1 rounded border p-4 group hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-950 cursor-pointer">
+                <div className={stackStyle}>
                   <SiCodeigniter className="text-4xl text-orange-700 " />
-                  <span className="text-lg lg:text-xl text-gray-950 font-bold group-hover:text-white">
+                  <span className="text-lg lg:text-xl text-gray-950 font-bold ">
                     Codeigniter
                   </span>
                 </div>

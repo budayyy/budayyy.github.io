@@ -29,7 +29,7 @@ export default function Home() {
         <Sidebar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
         <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
 
-        <div className="bg-white p-4 lg:pl-[22rem] lg:py-24 lg:pr-16 lg:w-[96%]">
+        <div className="bg-white p-4 lg:pl-88 lg:py-24 lg:pr-16 lg:w-[96%]">
           {loading && <LoadingScreen />}
           {!loading && (
             <div className="w-full bg-white p-2">
@@ -37,14 +37,14 @@ export default function Home() {
                 <img
                   src="./buday.jpg"
                   alt="budi"
-                  className="rounded-full w-40 h-40"
+                  className="rounded-full w-40 h-40 bg-cover"
                 />
               </div>
               <h3 className="text-3xl lg:text-5xl text-center lg:text-start font-extrabold">
                 Halo,I am Budi
               </h3>
               <div className="text-center lg:text-start">
-                <span className="text-xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
+                <span className="text-xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-linear-to-r from-gray-950 to-gray-500">
                   <TypeAnimation
                     sequence={[
                       // Same substring at the start will only be typed once, initially
@@ -64,28 +64,28 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4 lg:flex lg:items-center my-6">
                 <Link
                   to="/contact"
-                  className="py-2 px-4 rounded bg-gray-100 text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-950"
+                  className="py-2 px-4 rounded-sm bg-white text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-900 hover:bg-gray-100 shadow-background hover:shadow-none hover:translate-1"
                 >
                   <TbMail className="text-base" />
                   Contact
                 </Link>
                 <Link
                   to="mailto:bsetiawan260@gmail.com"
-                  className="py-2 px-4 rounded bg-white text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-900 hover:bg-gray-100"
+                  className="py-2 px-4 rounded-sm bg-white text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-900 hover:bg-gray-100 shadow-background hover:shadow-none hover:translate-1"
                 >
                   <TbMail className="text-base" />
                   Email
                 </Link>
                 <Link
                   to="https://github.com/budayyy"
-                  className="py-2 px-4 rounded bg-white text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-900 hover:bg-gray-100"
+                  className="py-2 px-4 rounded-sm bg-white text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-900 hover:bg-gray-100 shadow-background hover:shadow-none hover:translate-1"
                 >
                   <TbBrandGithub className="text-base" />
                   Github
                 </Link>
                 <Link
                   to="https://www.linkedin.com/in/budi-setiawan-7462741b2/"
-                  className="py-2 px-4 rounded bg-white text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-900 hover:bg-gray-100"
+                  className="py-2 px-4 rounded-sm bg-white text-xs font-semibold text-gray-950 flex items-center gap-x-2 border border-gray-900 hover:bg-gray-100 shadow-background hover:shadow-none hover:translate-1"
                 >
                   <TbBrandLinkedin className="text-base" />
                   Linkedin
@@ -93,7 +93,7 @@ export default function Home() {
               </div>
               <Link
                 to={"/projects"}
-                className="flex items-center justify-center gap-x-2 w-full lg:w-3/5 border border-gray-900 py-2 px-4 rounded-md bg-gray-950 text-white font-semibold text-sm lg:text-base hover:bg-gray-900"
+                className="flex items-center justify-center gap-x-2 w-full lg:w-3/5 border border-gray-900 py-2 px-4 rounded-md bg-primary text-background font-bold text-lg hover:bg-primary/80 shadow-background hover:shadow-none hover:translate-1"
               >
                 Showcase Projects
                 <TbArrowRight />

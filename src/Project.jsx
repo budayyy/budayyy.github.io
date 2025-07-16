@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Project } from "./libs/projects";
 import { useEffect, useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
+import HeadingSection from "./components/HeadingSection";
 
 export default function Home() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -23,15 +24,11 @@ export default function Home() {
       <div className="max-w-7xl mx-auto">
         <Sidebar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
         <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
-        <div className="bg-white p-4 lg:pl-[22rem] lg:py-24 lg:pr-16 lg:w-[96%]">
+        <div className="bg-white p-4 lg:pl-88 lg:py-24 lg:pr-16 lg:w-[96%]">
           {loading && <LoadingScreen />}
           {!loading && (
             <div className="w-full bg-white p-2 ">
-              <div className="text-center lg:text-start">
-                <span className="lg:text-start text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-500">
-                  Project
-                </span>
-              </div>
+              <HeadingSection>Projects</HeadingSection>
               <p className="mt-4 mb-8 text-center lg:text-start text-sm lg:text-base font-normal">
                 🚀 beberapa project yang sudah dibuat 🚀
               </p>
@@ -42,7 +39,7 @@ export default function Home() {
                   <Link key={data.id} to={data.link} target="_blank">
                     <div
                       key={data.id}
-                      className="border rounded space-y-2 lg:space-y-3 p-3 lg:p-2 w-full h-full bg-white flex flex-col hover:border-blue-400 hover:shadow-md transition duration-300"
+                      className="border rounded-lg space-y-2 lg:space-y-3 p-3 lg:p-2 w-full h-full bg-white flex flex-col hover:border-background hover:shadow-[8px_8px_0px_0px_#f3c623] transition-all duration-300"
                     >
                       <img
                         src={data.gambar}
@@ -60,7 +57,7 @@ export default function Home() {
                           {data.stack.map((item, index) => (
                             <span
                               key={index}
-                              className="text-[0.5rem] font-bold text-blue-500 bg-blue-100 rounded-full border py-0.5 px-3"
+                              className="text-[0.5rem] font-bold text-primary bg-primary/10 rounded-full border border-primary py-0.5 px-3"
                             >
                               {item}
                             </span>

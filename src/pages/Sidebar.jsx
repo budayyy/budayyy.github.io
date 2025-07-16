@@ -13,9 +13,9 @@ import { Link, NavLink } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 
 const sidebar =
-  "flex items-center gap-x-2  px-4 py-2 rounded-md text-gray-600 hover:text-gray-950 border border-gray-100 font-semibold text-sm";
+  "flex items-center gap-x-2  px-4 py-2 rounded-md text-gray-600 hover:text-gray-950 border border-gray-100 font-semibold text-sm hover:bg-primary/5 hover:border-primary";
 const sidebarActive =
-  "flex items-center gap-x-2 bg-gray-950 px-4 py-2 rounded-md border border-white text-white font-semibold text-sm";
+  "flex items-center gap-x-2 bg-primary px-4 py-2 rounded-md border border-background text-background font-semibold text-sm shadow-background";
 
 export default function Sidebar({ navbarOpen, setNavbarOpen }) {
   return (
@@ -26,12 +26,12 @@ export default function Sidebar({ navbarOpen, setNavbarOpen }) {
     >
       <div className="flex justify-end lg:hidden">
         <button
-          className="p-2 rounded-full bg-gray-950 text-white"
+          className="p-3 rounded-full bg-primary text-background shadow-background"
           onClick={() => {
             setNavbarOpen(!navbarOpen);
           }}
         >
-          <TbX className="etxt-sm" />
+          <TbX className="text-base" />
         </button>
       </div>
       <div className="flex items-center gap-x-2">
@@ -44,7 +44,7 @@ export default function Sidebar({ navbarOpen, setNavbarOpen }) {
         </div>
         <div>
           <p className="text-base font-bold text-gray-950">Budi Setiawan</p>
-          <p className="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-gray-950 to-gray-900">
+          <p className="text-sm font-semibold bg-clip-text text-transparent bg-linear-to-r from-gray-950 to-gray-900">
             <TypeAnimation
               sequence={[
                 "Web Developer.",
