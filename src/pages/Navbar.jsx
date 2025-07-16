@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Navbar({ navbarOpen, setNavbarOpen }) {
   return (
-    <nav className="w-full bg-white border-b border-b-primary p-4 block lg:hidden">
+    <nav className="w-full bg-white border-b border-b-primary fixed z-10 p-4 block lg:hidden">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-x-2">
           <img
@@ -12,8 +12,10 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
             alt="Budi Setiawan"
           />
           <div>
-            <p className="text-base font-bold text-gray-950">Budi Setiawan</p>
-            <p className="text-sm font-normal bg-clip-text text-transparent bg-linear-to-r from-gray-950 to-gray-900">
+            <p className="text-base font-bold text-gray-950 underline decoration-2 decoration-primary">
+              Budi Setiawan
+            </p>
+            <p className="text-sm font-normal bg-clip-text text-transparent bg-linear-to-r from-gray-950 to-gray-900 underline decoration-2 decoration-primary">
               <TypeAnimation
                 sequence={[
                   "Web Developer.",

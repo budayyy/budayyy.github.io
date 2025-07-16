@@ -32,7 +32,7 @@ export default function Home() {
         <div className="bg-white p-4 lg:pl-88 lg:py-24 lg:pr-16 lg:w-[96%]">
           {loading && <LoadingScreen />}
           {!loading && (
-            <div className="w-full bg-white p-2">
+            <div className="w-full bg-white pt-24 pb-8 lg:p-0">
               <div className="mb-6 flex justify-center lg:justify-start items-center">
                 <img
                   src="./buday.jpg"
@@ -40,11 +40,11 @@ export default function Home() {
                   className="rounded-full w-40 h-40 bg-cover"
                 />
               </div>
-              <h3 className="text-3xl lg:text-5xl text-center lg:text-start font-extrabold">
+              <h3 className="text-3xl lg:text-5xl text-center lg:text-start font-extrabold mb-4 underline decoration-4 decoration-primary">
                 Halo,I am Budi
               </h3>
               <div className="text-center lg:text-start">
-                <span className="text-xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-linear-to-r from-gray-950 to-gray-500">
+                <span className="text-xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-linear-to-r from-gray-950 to-gray-500 underline decoration-4 decoration-primary">
                   <TypeAnimation
                     sequence={[
                       // Same substring at the start will only be typed once, initially

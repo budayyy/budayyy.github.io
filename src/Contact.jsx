@@ -11,6 +11,7 @@ import {
 } from "react-icons/tb";
 import { useEffect, useState } from "react";
 import HeadingSection from "./components/HeadingSection";
+import SubtitleSection from "./components/SubtitleSection";
 
 export default function Home() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -32,12 +33,9 @@ export default function Home() {
         <div className="bg-white p-4 lg:pl-88 lg:py-24 lg:pr-16 lg:w-[96%]">
           {loading && <LoadingScreen />}
           {!loading && (
-            <div className="w-full bg-white p-2">
+            <div className="w-full bg-white pt-24 pb-8 lg:p-0">
               <HeadingSection>Contact</HeadingSection>
-
-              <p className="mt-4 mb-8 text-base font-normal text-center lg:text-start">
-                bolehlah koneksi bareng hehe😁
-              </p>
+              <SubtitleSection>bolehlah koneksi bareng hehe😁</SubtitleSection>
               <div className="w-full lg:max-w-sm space-y-4">
                 <Link
                   to="https://wa.me/+6287829890388"

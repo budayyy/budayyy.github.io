@@ -20,6 +20,7 @@ import { DiPhp } from "react-icons/di";
 import { useEffect, useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import HeadingSection from "./components/HeadingSection";
+import SubtitleSection from "./components/SubtitleSection";
 
 const stackStyle =
   "flex items-center justify-center gap-x-1 rounded-sm border p-4 group hover:bg-primary hover:border-background hover:shadow-background cursor-pointer";
@@ -44,12 +45,12 @@ export default function Home() {
         <div className="bg-white p-4 lg:pl-88 lg:py-24 lg:pr-16 lg:w-[96%]">
           {loading && <LoadingScreen />}
           {!loading && (
-            <div className="w-full bg-white p-2">
+            <div className="w-full bg-white pt-24 pb-8 lg:p-0">
               <HeadingSection>Stack</HeadingSection>
-              <p className="mt-4 mb-8 text-sm lg:text-base text-center lg:text-start font-normal">
+              <SubtitleSection>
                 🚀 beberapa stack yang saya gunakan ketika membuat sebuah
                 project 🚀
-              </p>
+              </SubtitleSection>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div className={stackStyle}>
                   <TbBrandHtml5 className="text-4xl text-orange-500" />

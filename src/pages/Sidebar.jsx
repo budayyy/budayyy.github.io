@@ -20,8 +20,10 @@ const sidebarActive =
 export default function Sidebar({ navbarOpen, setNavbarOpen }) {
   return (
     <aside
-      className={`lg:block fixed w-72 min-h-screen bg-gray-100 px-6 py-12 border-r shrink-0 space-y-6 z-10 lg:z-0 ${
-        navbarOpen ? "block transition ease-in-out duration-300" : "hidden"
+      className={`lg:block fixed w-72 min-h-screen bg-gray-100 px-6 py-8 border-r border-primary lg:border-l shrink-0 space-y-6 z-20 lg:z-0 ${
+        navbarOpen
+          ? "block transition ease-in-out duration-300 w-full"
+          : "hidden"
       }`}
     >
       <div className="flex justify-end lg:hidden">
@@ -43,8 +45,10 @@ export default function Sidebar({ navbarOpen, setNavbarOpen }) {
           />
         </div>
         <div>
-          <p className="text-base font-bold text-gray-950">Budi Setiawan</p>
-          <p className="text-sm font-semibold bg-clip-text text-transparent bg-linear-to-r from-gray-950 to-gray-900">
+          <p className="text-base font-bold text-gray-950 underline decoration-4 decoration-primary">
+            Budi Setiawan
+          </p>
+          <p className="text-sm font-semibold bg-clip-text text-transparent bg-linear-to-r from-gray-950 to-gray-900 underline decoration-4 decoration-primary">
             <TypeAnimation
               sequence={[
                 "Web Developer.",
@@ -110,7 +114,7 @@ export default function Sidebar({ navbarOpen, setNavbarOpen }) {
       </ul>
       <ul className="space-y-2 mt-6">
         <li>
-          <p className="text-xs font-semibold lg:font-bold px-4 text-gray-950">
+          <p className="text-sm font-semibold lg:font-bold px-4 text-gray-950 underline decoration-2 decoration-primary">
             FOLLOW
           </p>
         </li>
